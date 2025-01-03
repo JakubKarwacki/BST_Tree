@@ -34,7 +34,7 @@ Zadanie 2: Program realizujący drzewo BST (Binary Search Tree) z możliwością
         int vlr(N *root);
         int lvr(N *root);
         int lrv(N *root);
-        
+
     // Menu
         int menu();
 
@@ -106,7 +106,7 @@ Zadanie 2: Program realizujący drzewo BST (Binary Search Tree) z możliwością
                             printf("Usuwam wezel z dwoma dziecmi o wartosci: %i\n", node_to_delete->value);
 
                             N *successor = find_min(node_to_delete->right);
-                            int *successor_val = successor->value;
+                            int successor_val = successor->value;
 
                             printf("Znaleziono nastepnika o wartosci: %i, usuwam go aby zastapic nim wartosc aktualnego wezla\n", successor_val);
 
